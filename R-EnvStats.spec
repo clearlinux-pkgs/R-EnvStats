@@ -4,15 +4,12 @@
 #
 Name     : R-EnvStats
 Version  : 2.3.1
-Release  : 11
+Release  : 12
 URL      : https://cran.r-project.org/src/contrib/EnvStats_2.3.1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/EnvStats_2.3.1.tar.gz
 Summary  : Package for Environmental Statistics, Including US EPA Guidance
 Group    : Development/Tools
 License  : GPL-3.0
-Requires: R-Hmisc
-Requires: R-ggplot2
-Requires: R-nortest
 BuildRequires : R-Hmisc
 BuildRequires : R-ggplot2
 BuildRequires : R-nortest
@@ -34,11 +31,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1531749348
+export SOURCE_DATE_EPOCH=1531754972
 
 %install
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1531749348
+export SOURCE_DATE_EPOCH=1531754972
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
