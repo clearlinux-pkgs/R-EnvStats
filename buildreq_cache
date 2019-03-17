@@ -1,4 +1,10 @@
 2.3.1
-R-nortest
 R-Hmisc
 R-ggplot2
+R-gtable
+R-lazyeval
+R-munsell
+R-nortest
+R-plyr
+R-scales
+R-tibble

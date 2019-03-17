@@ -4,16 +4,28 @@
 #
 Name     : R-EnvStats
 Version  : 2.3.1
-Release  : 16
+Release  : 17
 URL      : https://cran.r-project.org/src/contrib/EnvStats_2.3.1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/EnvStats_2.3.1.tar.gz
 Summary  : Package for Environmental Statistics, Including US EPA Guidance
 Group    : Development/Tools
 License  : GPL-3.0
+Requires: R-gtable
+Requires: R-lazyeval
+Requires: R-munsell
+Requires: R-plyr
+Requires: R-scales
+Requires: R-tibble
 BuildRequires : R-Hmisc
 BuildRequires : R-ggplot2
+BuildRequires : R-gtable
+BuildRequires : R-lazyeval
+BuildRequires : R-munsell
 BuildRequires : R-nortest
-BuildRequires : clr-R-helpers
+BuildRequires : R-plyr
+BuildRequires : R-scales
+BuildRequires : R-tibble
+BuildRequires : buildreq-R
 
 %description
 focus on analyzing chemical concentrations and physical parameters, usually in 
@@ -31,11 +43,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1531754972
+export SOURCE_DATE_EPOCH=1552863760
 
 %install
+export SOURCE_DATE_EPOCH=1552863760
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1531754972
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -70,8 +82,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
-R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/library EnvStats|| : 
-cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
+R CMD check --no-manual --no-examples --no-codoc  EnvStats || :
 
 
 %files
