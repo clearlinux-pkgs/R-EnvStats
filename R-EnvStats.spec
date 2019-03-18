@@ -4,7 +4,7 @@
 #
 Name     : R-EnvStats
 Version  : 2.3.1
-Release  : 17
+Release  : 18
 URL      : https://cran.r-project.org/src/contrib/EnvStats_2.3.1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/EnvStats_2.3.1.tar.gz
 Summary  : Package for Environmental Statistics, Including US EPA Guidance
