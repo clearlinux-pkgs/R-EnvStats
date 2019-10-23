@@ -4,7 +4,7 @@
 #
 Name     : R-EnvStats
 Version  : 2.3.1
-Release  : 24
+Release  : 25
 URL      : https://cran.r-project.org/src/contrib/EnvStats_2.3.1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/EnvStats_2.3.1.tar.gz
 Summary  : Package for Environmental Statistics, Including US EPA Guidance
@@ -15,6 +15,7 @@ Requires: R-nortest
 BuildRequires : R-ggplot2
 BuildRequires : R-nortest
 BuildRequires : buildreq-R
+BuildRequires : util-linux
 
 %description
 focus on analyzing chemical concentrations and physical parameters, usually in 
@@ -32,10 +33,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1569356487
+export SOURCE_DATE_EPOCH=1571824389
 
 %install
-export SOURCE_DATE_EPOCH=1569356487
+export SOURCE_DATE_EPOCH=1571824389
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
