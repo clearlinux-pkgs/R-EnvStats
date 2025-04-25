@@ -1,5 +1,5 @@
 PKG_NAME := R-EnvStats
-URL = https://cran.r-project.org/src/contrib/EnvStats_3.0.0.tar.gz
+URL = https://ftp.osuosl.org/pub/cran/src/contrib/EnvStats_3.1.0.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
